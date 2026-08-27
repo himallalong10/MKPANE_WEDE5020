@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Explore MKPANE Agriculture products and services.">
+
+    <title>MKPANE | Services</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f5f7f2;
+            color: #263326;
+            line-height: 1.7;
+        }
+
+        header {
+            background-color: #183c2a;
+            color: white;
+            padding: 20px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .logo span {
+            color: #b9d66b;
+        }
+
+        nav {
+            display: flex;
+            gap: 25px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #b9d66b;
+        }
+
+        .banner {
+            padding: 100px 7%;
+            background:
+                linear-gradient(
+                    rgba(24, 60, 42, 0.85),
+                    rgba(24, 60, 42, 0.85)
+                ),
+                url("https://images.unsplash.com/photo-1499529112087-3cb3b73cec95?auto=format&fit=crop&w=1800&q=80");
+
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+        }
+
+        .banner h1 {
+            font-size: 55px;
+            margin-bottom: 15px;
+        }
+
+        .services {
+            padding: 80px 7%;
+            max-width: 1300px;
+            margin: auto;
+        }
+
+        .intro {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 50px;
+        }
+
+        .intro h2 {
+            font-size: 36px;
+            color: #183c2a;
+            margin-bottom: 15px;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .service-card {
+            background-color: white;
+            border-radius: 15px;
+            padding: 35px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            transition: 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .icon {
+            font-size: 45px;
+            margin-bottom: 20px;
+        }
+
+        .service-card h3 {
+            color: #183c2a;
+            font-size: 23px;
+            margin-bottom: 12px;
+        }
+
+        .service-card ul {
+            margin-top: 15px;
+            padding-left: 20px;
+        }
+
+        .cta {
+            margin-top: 60px;
+            padding: 50px;
+            background-color: #183c2a;
+            color: white;
+            text-align: center;
+            border-radius: 18px;
+        }
+
+        .cta h2 {
+            font-size: 34px;
+            margin-bottom: 15px;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 14px 28px;
+            background-color: #b9d66b;
+            color: #183c2a;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #10281d;
+            color: white;
+            padding: 40px 7%;
+            text-align: center;
+            margin-top: 80px;
+        }
+
+        footer p {
+            margin: 5px;
+        }
+
+        @media (max-width: 900px) {
+
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .service-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .banner h1 {
+                font-size: 40px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Website header and navigation -->
+
+    <header>
+
+        <div class="logo">
+            MKPANE<span>.</span>
+        </div>
+
+        <nav>
+
+            <a href="index.html">Home</a>
+
+            <a href="about.html">About Us</a>
+
+            <a href="services.html">Services</a>
+
+            <a href="enquiry.html">Enquiry</a>
+
+            <a href="contact.html">Contact</a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Services page banner -->
+
+    <section class="banner">
+
+        <h1>Our Services</h1>
+
+        <p>
+            Agricultural solutions designed with quality and purpose.
+        </p>
+
+    </section>
+
+
+    <!-- Services -->
+
+    <main class="services">
+
+        <section class="intro">
+
+            <h2>What We Offer</h2>
+
+            <p>
+                MKPANE provides agricultural products and services
+                designed to support customers and contribute to
+                sustainable agricultural development.
+            </p>
+
+        </section>
+
+
+        <section class="service-grid">
+
+
+            <article class="service-card">
+
+                <div class="icon">🌱</div>
+
+                <h3>Agricultural Production</h3>
+
+                <p>
+                    Our agricultural operations focus on responsible
+                    production and quality products.
+                </p>
+
+                <ul>
+                    <li>Crop production</li>
+                    <li>Responsible farming</li>
+                    <li>Quality control</li>
+                </ul>
+
+            </article>
+
+
+            <article class="service-card">
+
+                <div class="icon">🥬</div>
+
+                <h3>Fresh Produce</h3>
+
+                <p>
+                    We aim to provide quality agricultural produce
+                    for customers and local markets.
+                </p>
+
+                <ul>
+                    <li>Fresh produce</li>
+                    <li>Local supply</li>
+                    <li>Customer orders</li>
+                </ul>
+
+            </article>
+
+
+            <article class="service-card">
+
+                <div class="icon">🚜</div>
+
+                <h3>Farming Support</h3>
+
+                <p>
+                    We support agricultural activities through
+                    practical farming solutions and partnerships.
+                </p>
+
+                <ul>
+                    <li>Agricultural support</li>
+                    <li>Farming partnerships</li>
+                    <li>Project development</li>
+                </ul>
+
+            </article>
+
+
+            <article class="service-card">
+
+                <div class="icon">🌍</div>
+
+                <h3>Sustainable Agriculture</h3>
+
+                <p>
+                    We promote farming practices that consider
+                    environmental responsibility and future growth.
+                </p>
+
+                <ul>
+                    <li>Resource awareness</li>
+                    <li>Responsible farming</li>
+                    <li>Long-term planning</li>
+                </ul>
+
+            </article>
+
+
+            <article class="service-card">
+
+                <div class="icon">🤝</div>
+
+                <h3>Agricultural Partnerships</h3>
+
+                <p>
+                    We seek opportunities to work with customers,
+                    suppliers and agricultural partners.
+                </p>
+
+                <ul>
+                    <li>Business partnerships</li>
+                    <li>Supplier relationships</li>
+                    <li>Community initiatives</li>
+                </ul>
+
+            </article>
+
+
+            <article class="service-card">
+
+                <div class="icon">📈</div>
+
+                <h3>Business Growth</h3>
+
+                <p>
+                    Our long-term approach focuses on developing
+                    sustainable agricultural business opportunities.
+                </p>
+
+                <ul>
+                    <li>Growth planning</li>
+                    <li>Market development</li>
+                    <li>Future opportunities</li>
+                </ul>
+
+            </article>
+
+
+        </section>
+
+
+        <!-- Call to action -->
+
+        <section class="cta">
+
+            <h2>Interested in Our Services?</h2>
+
+            <p>
+                Contact MKPANE to discuss your requirements.
+            </p>
+
+            <a href="enquiry.html" class="button">
+                Make An Enquiry
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- Website footer -->
+
+    <footer>
+
+        <p><strong>MKPANE Agriculture</strong></p>
+
+        <p>
+            Growing with purpose. Building for tomorrow.
+        </p>
+
+        <p>
+            &copy; 2026 MKPANE. All rights reserved.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

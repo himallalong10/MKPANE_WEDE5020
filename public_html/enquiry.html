@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Submit an enquiry to MKPANE Agriculture.">
+
+    <title>MKPANE | Enquiry</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f5f7f2;
+            color: #263326;
+            line-height: 1.7;
+        }
+
+        header {
+            background-color: #183c2a;
+            color: white;
+            padding: 20px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .logo span {
+            color: #b9d66b;
+        }
+
+        nav {
+            display: flex;
+            gap: 25px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #b9d66b;
+        }
+
+        .banner {
+            padding: 90px 7%;
+            background:
+                linear-gradient(
+                    rgba(24, 60, 42, 0.86),
+                    rgba(24, 60, 42, 0.86)
+                ),
+                url("https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=1800&q=80");
+
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+        }
+
+        .banner h1 {
+            font-size: 52px;
+            margin-bottom: 15px;
+        }
+
+        .enquiry-container {
+            max-width: 1000px;
+            margin: 70px auto;
+            padding: 0 7%;
+        }
+
+        .form-box {
+            background-color: white;
+            padding: 45px;
+            border-radius: 18px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+        }
+
+        .form-box h2 {
+            color: #183c2a;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .form-box > p {
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 7px;
+            color: #183c2a;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 14px;
+            border: 1px solid #ccd4c8;
+            border-radius: 8px;
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        input:focus,
+        select:focus,
+        textarea:focus {
+            outline: 2px solid #b9d66b;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        button {
+            background-color: #183c2a;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 30px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #285c40;
+        }
+
+        .note {
+            margin-top: 25px;
+            padding: 20px;
+            background-color: #eef4e5;
+            border-left: 5px solid #b9d66b;
+        }
+
+        footer {
+            background-color: #10281d;
+            color: white;
+            padding: 40px 7%;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 5px;
+        }
+
+        @media (max-width: 800px) {
+
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .form-box {
+                padding: 25px;
+            }
+
+            .banner h1 {
+                font-size: 40px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Website header -->
+
+    <header>
+
+        <div class="logo">
+            MKPANE<span>.</span>
+        </div>
+
+        <nav>
+
+            <a href="index.html">Home</a>
+
+            <a href="about.html">About Us</a>
+
+            <a href="services.html">Services</a>
+
+            <a href="enquiry.html">Enquiry</a>
+
+            <a href="contact.html">Contact</a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Page banner -->
+
+    <section class="banner">
+
+        <h1>Make An Enquiry</h1>
+
+        <p>
+            Tell us how we can assist you.
+        </p>
+
+    </section>
+
+
+    <!-- Enquiry form -->
+
+    <main class="enquiry-container">
+
+        <section class="form-box">
+
+            <h2>Enquiry Form</h2>
+
+            <p>
+                Complete the form below and provide information
+                about the product or service you are interested in.
+            </p>
+
+
+            <form action="#" method="post">
+
+
+                <div class="form-group">
+
+                    <label for="fullname">
+                        Full Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="fullname"
+                        name="fullname"
+                        placeholder="Enter your full name"
+                        required>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="email">
+                        Email Address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email address"
+                        required>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="phone">
+                        Phone Number
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="Enter your phone number"
+                        required>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="service">
+                        Service Required
+                    </label>
+
+                    <select id="service" name="service" required>
+
+                        <option value="">
+                            Select a service
+                        </option>
+
+                        <option value="agricultural-production">
+                            Agricultural Production
+                        </option>
+
+                        <option value="fresh-produce">
+                            Fresh Produce
+                        </option>
+
+                        <option value="farming-support">
+                            Farming Support
+                        </option>
+
+                        <option value="sustainable-agriculture">
+                            Sustainable Agriculture
+                        </option>
+
+                        <option value="partnership">
+                            Agricultural Partnership
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="message">
+                        Your Enquiry
+                    </label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="7"
+                        placeholder="Tell us more about your enquiry..."
+                        required></textarea>
+
+                </div>
+
+
+                <button type="submit">
+                    Submit Enquiry
+                </button>
+
+
+                <div class="note">
+
+                    <strong>Important:</strong>
+
+                    <p>
+                        This form is part of the website interface.
+                        Form processing functionality can be added
+                        during the later stages of the project.
+                    </p>
+
+                </div>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p><strong>MKPANE Agriculture</strong></p>
+
+        <p>
+            Growing with purpose. Building for tomorrow.
+        </p>
+
+        <p>
+            &copy; 2026 MKPANE. All rights reserved.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

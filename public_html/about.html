@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Learn more about MKPANE Agriculture, our mission, vision and commitment to sustainable agriculture.">
+
+    <title>MKPANE | About Us</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f5f7f2;
+            color: #263326;
+            line-height: 1.7;
+        }
+
+        header {
+            background-color: #183c2a;
+            color: white;
+            padding: 20px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .logo span {
+            color: #b9d66b;
+        }
+
+        nav {
+            display: flex;
+            gap: 25px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #b9d66b;
+        }
+
+        .page-banner {
+            padding: 100px 7%;
+            background:
+                linear-gradient(
+                    rgba(24, 60, 42, 0.85),
+                    rgba(24, 60, 42, 0.85)
+                ),
+                url("https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=1800&q=80");
+
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+        }
+
+        .page-banner h1 {
+            font-size: 55px;
+            margin-bottom: 15px;
+        }
+
+        .page-banner p {
+            font-size: 19px;
+        }
+
+        .content {
+            padding: 80px 7%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .content-section {
+            background-color: white;
+            padding: 40px;
+            margin-bottom: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+        }
+
+        .content-section h2 {
+            color: #183c2a;
+            font-size: 32px;
+            margin-bottom: 18px;
+        }
+
+        .values {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .value-card {
+            padding: 30px;
+            background-color: #eef4e5;
+            border-radius: 12px;
+        }
+
+        .value-card h3 {
+            color: #183c2a;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #10281d;
+            color: white;
+            padding: 40px 7%;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 5px;
+        }
+
+        @media (max-width: 800px) {
+
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .page-banner h1 {
+                font-size: 40px;
+            }
+
+            .values {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Website header and navigation -->
+
+    <header>
+
+        <div class="logo">
+            MKPANE<span>.</span>
+        </div>
+
+        <nav>
+
+            <a href="index.html">Home</a>
+
+            <a href="about.html">About Us</a>
+
+            <a href="services.html">Services</a>
+
+            <a href="enquiry.html">Enquiry</a>
+
+            <a href="contact.html">Contact</a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- About page banner -->
+
+    <section class="page-banner">
+
+        <h1>About MKPANE</h1>
+
+        <p>
+            Growing with purpose. Building for tomorrow.
+        </p>
+
+    </section>
+
+
+    <!-- Main About Us content -->
+
+    <main class="content">
+
+        <section class="content-section">
+
+            <h2>Who We Are</h2>
+
+            <p>
+                MKPANE is an agricultural organisation focused on
+                providing quality agricultural products and services
+                while supporting responsible and sustainable farming.
+            </p>
+
+            <br>
+
+            <p>
+                Our approach is built around quality, reliability and
+                creating long-term value for our customers and the
+                communities in which we operate.
+            </p>
+
+        </section>
+
+
+        <section class="content-section">
+
+            <h2>Our Mission</h2>
+
+            <p>
+                Our mission is to provide quality agricultural products
+                and services through responsible farming practices,
+                customer-focused solutions and sustainable business
+                development.
+            </p>
+
+        </section>
+
+
+        <section class="content-section">
+
+            <h2>Our Vision</h2>
+
+            <p>
+                Our vision is to become a trusted agricultural
+                organisation recognised for quality, sustainability,
+                innovation and positive community impact.
+            </p>
+
+        </section>
+
+
+        <section class="content-section">
+
+            <h2>Our Values</h2>
+
+            <div class="values">
+
+                <article class="value-card">
+
+                    <h3>Quality</h3>
+
+                    <p>
+                        We aim to maintain high standards in the
+                        products and services we provide.
+                    </p>
+
+                </article>
+
+
+                <article class="value-card">
+
+                    <h3>Sustainability</h3>
+
+                    <p>
+                        We support responsible farming practices
+                        that consider the future of agriculture.
+                    </p>
+
+                </article>
+
+
+                <article class="value-card">
+
+                    <h3>Community</h3>
+
+                    <p>
+                        We believe agriculture can contribute to
+                        stronger communities and economic opportunities.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <section class="content-section">
+
+            <h2>Our Commitment</h2>
+
+            <p>
+                MKPANE is committed to continuously improving its
+                operations and building strong relationships with
+                customers, suppliers and agricultural partners.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- Website footer -->
+
+    <footer>
+
+        <p><strong>MKPANE Agriculture</strong></p>
+
+        <p>
+            Growing with purpose. Building for tomorrow.
+        </p>
+
+        <p>
+            &copy; 2026 MKPANE. All rights reserved.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
